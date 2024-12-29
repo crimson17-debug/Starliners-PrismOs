@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC File Explorer Replica</title>
+    <link rel="icon" type="jpeg" href="pcicon.jpeg">
+    <link rel="stylesheet" href="pc.css">
+</head>
+<body>
+    <button class="menu-toggle">☰</button>
+    <div class="sidebar">
+        <h2>Quick Access</h2>
+        <ul>
+            <li data-path="This PC">This PC</li>
+            <li data-path="Documents">Documents</li>
+            <li data-path="Downloads">Downloads</li>
+            <li data-path="Pictures">Pictures</li>
+            <li data-path="Desktop">Desktop</li>
+            <li data-path="Music">Music</li>
+        </ul>
+    </div>
+    <div class="main-area">
+        <div class="top-bar">
+            <div class="path-bar">
+                <span>This PC</span>
+                <span>Local Disk (C:)</span>
+            </div>
+        </div>
+        <h2>Local Disk (C:)</h2>
+        <div class="folder-container">
+            <div class="folder" data-name="Program Files">
+                <div class="folder-icon"></div>
+                <p>Program Files</p>
+            </div>
+            <div class="folder" data-name="Users">
+                <div class="folder-icon"></div>
+                <p>Users</p>
+            </div>
+            <div class="folder" data-name="Windows">
+                <div class="folder-icon"></div>
+                <p>Windows</p>
+            </div>
+            <div class="folder" data-name="Documents and Settings">
+                <div class="folder-icon"></div>
+                <p>Documents and Settings</p>
+            </div>
+        </div>
+    </div>
+    <div class="context-menu">
+        <div class="context-menu-item">Open</div>
+        <div class="context-menu-item">Copy</div>
+        <div class="context-menu-item">Cut</div>
+        <div class="context-menu-item">Delete</div>
+        <div class="context-menu-item">Properties</div>
+    </div>
+    <div class="loading">Loading...</div>
+    <div class="notification">Notification Message</div>
+    
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <div class="taskbar-icon" title="Start" id="startButton">
+                <img src="menu.png" alt="Start" width="24" height="24">
+            </div>
+            <div class="search-container">
+                <img src="search.png" alt="Search" width="16" height="16" style="margin-right: 8px;">
+                <input type="text" id="search-box" placeholder="Search..." />
+            </div>
+        </div>
+
+        <div class="taskbar-center">
+            <div class="taskbar-icon active" title="Microsoft Edge" data-link="https://copilot.microsoft.com/">
+                <img src="microsoft.png" alt="Edge" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Chrome" data-link="https://www.google.com">
+                <img src="chrome.png" alt="Chrome" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="VS Code" data-link="https://vscode.dev/">
+                <img src="visual-studio.png" alt="VS Code" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="ChatGPT" data-link="https://chatgpt.com/">
+                <img src="artificial-intelligence.png" alt="ChatGPT" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Google Drive" data-link="https://workspace.google.com/intl/en_in/products/drive/">
+                <img src="google-drive.png" alt="Drive" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Spotify" data-link="https://open.spotify.com/">
+                <img src="spotify.png" alt="Spotify" width="24" height="24">
+            </div>
+        </div>
+         <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+        <div class="menu-header">Start Menu</div>
+        <div class="menu-item">
+            <img src="settings.png" alt="Settings" width="30" height="30"> <h4>SETTINGS</h4>
+        </div>
+        <div class="menu-item">
+            <img src="folder.png" alt="Folder" width="30" height="30"> <h4>Files</h4>
+        </div>
+        <div class="menu-item">
+            <img src="preference.png" alt="Control Panel" width="30" height="30"> <h4>Control Panel</h4>
+        </div>
+        <div class="menu-item">
+            <img src="shutdown.png" alt="shutdown" width="30" height="30"> <h4>Shutdown</h4>
+        </div>
+    </div>
+
+
+        <div class="taskbar-right">
+            <div class="system-tray">
+                <div class="taskbar-icon" title="Show hidden icons">
+                    <img src="upload.png" alt="Show more" width="16" height="16">
+                </div>
+                <div class="taskbar-icon" title="WiFi: Connected">
+                    <img src="wifi.png" alt="WiFi" width="20" height="20">
+                </div>
+                <div class="taskbar-icon" title="Volume: 80%">
+                    <img src="medium-volume.png" alt="Volume" width="20" height="20">
+                </div>
+                <div class="taskbar-icon" title="Battery: 67%">
+                    <img src="battery-charge.png" alt="Battery" width="20" height="20">
+                </div>
+                <div class="clock">
+                    <div class="time">12:00 PM</div>
+                    <div class="date" id="date">Dec 29, 2024</div>
+                </div>
+                
+                <div class="taskbar-icon" title="Notifications">
+                    <img src="notification.png" alt="Notifications" width="20" height="20">
+                </div>
+            </div>
+            <script src="pc.js"></script>
+</body>
+</html>
