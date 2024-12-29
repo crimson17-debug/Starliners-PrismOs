@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows OS Replica - Vertical Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="window.css">
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+    <video autoplay muted loop id="myVideo">
+        <source src="rain.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <div class="desktop">
+        <div class="desktop-icons">
+            <div class="desktop-icon" data-link="thispc.html">
+                <div class="icon-image">
+                    <img src="computer.png" alt="This PC" width="48" height="48">
+                </div>
+                <div class="icon-text">This PC</div>
+            </div>
+            <div class="desktop-icon" data-link="https://workspace.google.com/intl/en_in/products/docs/">
+                <div class="icon-image">
+                    <img src="documentation.png" alt="Documents" width="48" height="48">
+                </div>
+                <div class="icon-text">Documents</div>
+            </div>
+            <div class="desktop-icon" data-link="https://www.google.com">
+                <div class="icon-image">
+                    <img src="browser.png" alt="Browser" width="48" height="48">
+                </div>
+                <div class="icon-text">Browser</div>
+            </div>
+            <div class="desktop-icon" data-link="https://calendar.google.com/calendar/u/0/r?pli=1">
+                <div class="icon-image">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5231/5231988.png" alt="Recycle Bin" width="48" height="48">
+                </div>
+                <div class="icon-text">Calendar</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+        <div class="menu-header">Start Menu</div>
+        <div class="menu-item">
+            <img src="settings.png" alt="Settings" width="30" height="30"> <h4>SETTINGS</h4>
+        </div>
+        <div class="menu-item">
+            <img src="folder.png" alt="Folder" width="30" height="30"> <h4>Files</h4>
+        </div>
+        <div class="menu-item">
+            <img src="preference.png" alt="Control Panel" width="30" height="30"> <h4>Control Panel</h4>
+        </div>
+        <div class="menu-item">
+            <img src="shutdown.png" alt="shutdown" width="30" height="30"> <h4>Shutdown</h4>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <div class="taskbar-icon" title="Start" id="startButton">
+                <img src="menu.png" alt="Start" width="24" height="24">
+            </div>
+            <div class="search-container">
+                <img src="search.png" alt="Search" width="16" height="16" style="margin-right: 8px;">
+                <input type="text" id="search-box" placeholder="Search..." />
+            </div>
+        </div>
+
+        <div class="taskbar-center">
+            <div class="taskbar-icon active" title="Microsoft Edge" data-link="https://copilot.microsoft.com/">
+                <img src="microsoft.png" alt="Edge" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Chrome" data-link="https://www.google.com">
+                <img src="chrome.png" alt="Chrome" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="VS Code" data-link="https://vscode.dev/">
+                <img src="visual-studio.png" alt="VS Code" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="ChatGPT" data-link="https://chatgpt.com/">
+                <img src="artificial-intelligence.png" alt="ChatGPT" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Google Drive" data-link="https://workspace.google.com/intl/en_in/products/drive/">
+                <img src="google-drive.png" alt="Drive" width="24" height="24">
+            </div>
+            <div class="taskbar-icon" title="Spotify" data-link="https://open.spotify.com/">
+                <img src="spotify.png" alt="Spotify" width="24" height="24">
+            </div>
+        </div>
+
+        <div class="taskbar-right">
+            <div class="system-tray">
+                <div class="taskbar-icon" title="Show hidden icons">
+                    <img src="upload.png" alt="Show more" width="16" height="16">
+                </div>
+                <div class="taskbar-icon" title="WiFi: Connected">
+                    <img src="wifi.png" alt="WiFi" width="20" height="20">
+                </div>
+                <div class="taskbar-icon" title="Volume: 80%">
+                    <img src="medium-volume.png" alt="Volume" width="20" height="20">
+                </div>
+                <div class="taskbar-icon" title="Battery: 67%">
+                    <img src="battery-charge.png" alt="Battery" width="20" height="20">
+                </div>
+                <div class="clock">
+                    <div class="time">12:00 PM</div>
+                    <div class="date" id="date">Dec 29, 2024</div>
+                </div>
+                
+                
+                <div class="taskbar-icon" title="Notifications">
+                    <img src="notification.png" alt="Notifications" width="20" height="20">
+                </div>
+            </div>
+            <div class="show-desktop" title="Show desktop"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
